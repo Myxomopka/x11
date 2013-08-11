@@ -11,13 +11,12 @@ fi
 
 xset r rate 345 53 s 80 dpms 100 111 120
 xrdb ~/.Xresources
+urxvt -e tmux attach &
 
 #feh --bg-fill /home/toby/img/wallpapers/galaxy.jpg
 #eval "$(gpg-agent --daemon)"
 
 sleep 20; parcellite -d -n & 
 sleep 40; dropbox start &
-
-urxvt -e tmux attach
 
 wait $wmpid
