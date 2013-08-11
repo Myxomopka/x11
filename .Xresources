@@ -1,0 +1,9 @@
+! Universal
+
+*scrollBar:false
+*saveLines:13337
+*cursorColor:#bbbbbb
+*background:#000000
+*foreground:#dedede
+*font:xft:Terminus:style=Regular:pixelsize=14:antialias=true
+
