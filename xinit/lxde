@@ -9,7 +9,7 @@ if [ $(hostname) = "paddy" ]; then
         #synclient TouchpadOff=1
 fi
 
-xset r rate 345 53 s 80 dpms 100 111 120
+xset r rate 345 53 s 80 dpms 100 111 120 +fp '/usr/share/fonts/local' fp rehash
 xrdb ~/.Xresources
 
 #feh --bg-fill /home/toby/img/wallpapers/galaxy.jpg
