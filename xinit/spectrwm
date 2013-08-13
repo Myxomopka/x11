@@ -2,7 +2,7 @@ exec /usr/bin/spectrwm & wmpid=$!
 setxkbmap gb -option 'caps:swapescape,ctrl:menu_rctrl,lv3:ralt_alt,terminate:ctrl_alt_bksp'
 
 if [ $(hostname) = "paddy" ]; then
-	xmodmap -e "keysym Print = Super_R"
+        xmodmap ~/.Xmodmap
         xinput set-prop 13 'Device Accel Profile' 6
         xinput set-prop 13 'Evdev Wheel Emulation' 3
         xinput set-prop 13 'Evdev Wheel Emulation Button' 1

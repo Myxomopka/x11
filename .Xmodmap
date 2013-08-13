@@ -1,0 +1,16 @@
+clear control
+keycode  80 = Control_R
+keycode  81 = Control_R
+keycode  83 = Control_R
+keycode  85 = Control_R
+keycode  88 = Control_R
+keycode  89 = Control_R
+keycode 111 = Control_R
+keycode 112 = Control_R
+keycode 113 = Control_R
+keycode 114 = Control_R
+keycode 116 = Control_R
+keycode 117 = Control_R
+keycode 218 = Super_R
+add control = Control_R Control_L
+keysym Print = Super_R
