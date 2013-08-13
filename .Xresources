@@ -5,6 +5,6 @@
 *cursorColor:#bbbbbb
 *background:#000000
 *foreground:#dedede
-!*font:xft:Terminus:style=Regular:pixelsize=14:antialias=true
-*font:-*-terminus-*-*-*-*-14-*-*-*-*-*-*-*
+*font:xft:Terminus:style=Regular:pixelsize=14:antialias=true
+!*font:-*-terminus-*-*-*-*-14-*-*-*-*-*-*-*
 
