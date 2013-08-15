@@ -20,6 +20,6 @@ urxvt -e tmux attach &
 
 sleep 20; parcellite -d -n & 
 sleep 40; dropbox start &
-sleep 60; /home/toby/Dropbox/X11/xbin/zzzsysd &
+sleep 60; /home/toby/Dropbox/bin/zzzsysd &
 
 wait $wmpid
