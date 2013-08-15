@@ -1,3 +1,5 @@
+#!/bin/sh
+
 exec /usr/bin/spectrwm & wmpid=$!
 setxkbmap gb -option 'caps:swapescape,ctrl:menu_rctrl,lv3:ralt_alt,terminate:ctrl_alt_bksp'
 
@@ -18,5 +20,6 @@ urxvt -e tmux attach &
 
 sleep 20; parcellite -d -n & 
 sleep 40; dropbox start &
+sleep 60; /home/toby/Dropbox/X11/xbin/zzzsysd &
 
 wait $wmpid
