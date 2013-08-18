@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>oxygen</name>
+    <name>Onyx</name>
     <titleLayout>SIMDC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
@@ -181,7 +181,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-      <width>50%</width>
+        <width>50%</width>
       </action>
       <action name="MoveToEdgeWest"/>
     </keybind>
@@ -189,7 +189,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
-      <width>50%</width>
+        <width>50%</width>
       </action>
       <action name="MoveToEdgeEast"/>
     </keybind>
@@ -220,14 +220,14 @@
         <follow>yes</follow>
       </action>
     </keybind>
-    <keybind key="C-A-h">
+    <keybind key="A-S-h">
       <action name="SendToDesktop">
         <to>left</to>
         <wrap>yes</wrap>
         <follow>no</follow>
       </action>
     </keybind>
-    <keybind key="C-A-l">
+    <keybind key="A-S-l">
       <action name="SendToDesktop">
         <to>right</to>
         <wrap>yes</wrap>
@@ -268,7 +268,7 @@
         <follow>no</follow>
       </action>
     </keybind>
-    <keybind key="A-d">
+    <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
@@ -280,20 +280,10 @@
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
-    <keybind key="W-m">
-      <action name="ShowMenu">
-        <menu>client-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="A-m">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="C-A-BackSpace">
+    <keybind key="A-q">
       <action name="Restart"/>
     </keybind>
-    <keybind key="C-A-Delete">
+    <keybind key="A-S-q">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -302,20 +292,11 @@
         <command>oblogout</command>
       </action>
     </keybind>
-    <keybind key="A-F9">
-      <action name="ToggleShade"/>
-    </keybind>
-    <keybind key="A-F10">
+    <keybind key="A-m">
       <action name="ToggleMaximize"/>
-    </keybind>
-    <keybind key="A-F11">
-      <action name="ToggleOmnipresent"/>
     </keybind>
     <keybind key="F11">
       <action name="ToggleFullscreen"/>
-    </keybind>
-    <keybind key="A-F8">
-      <action name="Iconify"/>
     </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
@@ -331,7 +312,7 @@
         </finalactions>
       </action>
     </keybind>
-    <keybind key="C-Return">
+    <keybind key="A-S-Tab">
       <action name="PreviousWindow">
         <allDesktops>yes</allDesktops>
         <dialog>list</dialog>
@@ -371,16 +352,16 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="C-space">
+    <keybind key="A-p">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
           <name>Dmenu</name>
         </startupnotify>
-        <command>dmenu_run -i -p 'dmenu:' -fn '7x14bold' -nb '#002b36' -nf '#ababab' -sb '#ababab' -sf '#000000'</command>
+        <command>dmenu_run -fn '-*-terminus-*-*-*-*-14-*-*-*-*-*-*-*'</command>
       </action>
     </keybind>
-    <keybind key="A-t">
+    <keybind key="A-S-Return">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -389,108 +370,29 @@
         <command>urxvt -e tmux attach</command>
       </action>
     </keybind>
-    <keybind key="A-x">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>xterm</name>
-        </startupnotify>
-        <command>xterm</command>
-      </action>
-    </keybind>
-    <keybind key="A-e">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>emacs</name>
-        </startupnotify>
-        <command>emacsclient -c -a ""</command>
-      </action>
-    </keybind>
-    <keybind key="A-v">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>gvim</name>
-        </startupnotify>
-        <command>gvim</command>
-      </action>
-    </keybind>
-    <keybind key="A-w">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>chrome</name>
-        </startupnotify>
-        <command>chromium</command>
-      </action>
-    </keybind>
-    <keybind key="A-b">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>firefox</name>
-        </startupnotify>
-        <command>firefox</command>
-      </action>
-    </keybind>
-    <keybind key="A-f">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Space</name>
-        </startupnotify>
-        <command>spacefm</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioRaiseVolume">
+    <keybind key="A-F11">
       <action name="Execute">
         <command>amixer -q set Master 2%+ unmute</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioLowerVolume">
+    <keybind key="A-F10">
       <action name="Execute">
         <command>amixer -q set Master 2%- unmute</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioMute">
+    <keybind key="A-F9">
       <action name="Execute">
         <command>amixer -q set Master toggle</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioPlay">
+    <keybind key="A-Print">
       <action name="Execute">
-        <command>ncmpcpp toggle</command>
+        <command>scrot</command>
       </action>
     </keybind>
-    <keybind key="XF86AudioPrev">
+    <keybind key="W-Print">
       <action name="Execute">
-        <command>ncmpcpp prev</command>
-      </action>
-    </keybind>
-    <keybind key="XF86AudioNext">
-      <action name="Execute">
-        <command>ncmpcpp next</command>
-      </action>
-    </keybind>
-    <keybind key="XF86MonBrightnessUp">
-      <action name="Execute">
-        <command>xbacklight +10</command>
-      </action>
-    </keybind>
-    <keybind key="XF86MonBrightnessDown">
-      <action name="Execute">
-        <command>xbacklight -10</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-b">
-      <action name="Execute">
-        <command>lightoff</command>
-      </action>
-    </keybind>
-    <keybind key="Print">
-      <action name="Execute">
-        <command>ksnapshot</command>
+        <command>scrot -s</command>
       </action>
     </keybind>
   </keyboard>
