@@ -8,10 +8,12 @@ if [ $(hostname) = "paddy" ]; then
         xinput set-prop 13 'Device Accel Profile' 6
         xinput set-prop 13 'Evdev Wheel Emulation' 1
         xinput set-prop 13 'Evdev Wheel emulation Button' 2
+        xset r rate 345 53 s 80 dpms 100 111 120 +fp '/usr/share/fonts/local' fp rehash
         #synclient TouchpadOff=1
+elif [ $(hostname) = "archy" ]; then
+       xset r rate 345 53 s 80 dpms 160 170 180 +fp '/usr/share/fonts/local' fp rehash
 fi
 
-xset r rate 345 53 s 80 dpms 100 111 120 +fp '/usr/share/fonts/local' fp rehash
 xrdb ~/.Xresources
 urxvt -e tmux attach &
 

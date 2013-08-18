@@ -1,17 +1,19 @@
 #!/bin/sh
 
-exec /usr/bin/lxde & wmpid=$!
+exec /usr/bin/openbox & wmpid=$!
 setxkbmap gb -option 'caps:swapescape,ctrl:menu_rctrl,lv3:ralt_alt,terminate:ctrl_alt_bksp'
 
 if [ $(hostname) = "paddy" ]; then
         xmodmap ~/.Xmodmap
         xinput set-prop 13 'Device Accel Profile' 6
         xinput set-prop 13 'Evdev Wheel Emulation' 1
-        xinput set-prop 13 'Evdev Wheel Emulation Button' 3
+        xinput set-prop 13 'Evdev Wheel emulation Button' 2
+        xset r rate 345 53 s 80 dpms 100 105 110 +fp '/usr/share/fonts/local' fp rehash
         #synclient TouchpadOff=1
+elif [ $(hostname) = "archy" ]; then
+       xset r rate 345 53 s 80 dpms 170 175 180 +fp '/usr/share/fonts/local' fp rehash
 fi
 
-xset r rate 345 53 s 80 dpms 100 111 120 +fp '/usr/share/fonts/local' fp rehash
 xrdb ~/.Xresources
 
 #feh --bg-fill /home/toby/img/wallpapers/galaxy.jpg
