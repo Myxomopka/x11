@@ -26,7 +26,7 @@ border_color = #000000 101
 #panel_items = TBSC
 panel_monitor = all
 panel_position = top center
-panel_size = 100% 20
+panel_size = 100% 18
 panel_margin = 0 0
 panel_padding = 0 0
 font_shadow = 1
@@ -81,7 +81,7 @@ systray = 1
 systray_padding = 8 2 4
 systray_sort = ascending
 systray_background_id = 1
-systray_icon_size = 20
+systray_icon_size = 18
 
 #---------------------------------------------
 # CLOCK
