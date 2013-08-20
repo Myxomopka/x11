@@ -21,28 +21,28 @@
 				<item label="Scrot Now">
 					<action name="Execute">
 						<command>
-                                                  scrot '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/img/scrots/ &amp; feh ~/Dropbox/img/scrots/$f'
+                                                  scrot '%H:%M-%d-%m-%y.png' -e 'mv $f ~/Dropbox/img/scrots/ &amp; sxiv ~/Dropbox/img/scrots/$f'
 						</command>
 					</action>
 				</item>
 				<item label="In 5 Seconds...">
 					<action name="Execute">
 						<command>
-                                                  scrot -d 5 '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/img/scrots/ &amp; feh ~/Dropbox/img/scrots/$f'
+                                                  scrot -d 5 '%H:%M-%d-%m-%y.png' -e 'mv $f ~/Dropbox/img/scrots/ &amp; sxiv ~/Dropbox/img/scrots/$f'
 						</command>
 					</action>
 				</item>
 				<item label="In 10 Seconds...">
 					<action name="Execute">
 						<command>
-                                                  scrot -d 10 '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/img/scrots/ &amp; feh ~/Dropbox/img/scrots/$f'
+                                                  scrot -d 10 '%H:%M-%d-%m-%y.png' -e 'mv $f ~/Dropbox/img/scrots/ &amp; sxiv ~/Dropbox/img/scrots/$f'
 						</command>
 					</action>
 				</item>
 				<item label="Selected Area... (click &amp; drag mouse)">
 					<action name="Execute">
 						<command>
-                                                  scrot -s '%Y-%m-%d--%s_$wx$h_scrot.png' -e 'mv $f ~/Dropbox/img/scrots/ &amp; feh ~/Dropbox/img/scrots/$f'
+                                                  scrot -s '%H:%M-%d-%m-%y.png' -e 'mv $f ~/Dropbox/img/scrots/ &amp; sxiv ~/Dropbox/img/scrots/$f'
 					</command>
 				</action>
 			</item>

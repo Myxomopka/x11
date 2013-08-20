@@ -1,7 +1,5 @@
-## Set background (hopefully...)
-feh --bg-fill /home/toby/Dropbox/img/wallpapers/arch/archkali.png
-
 tint2 &
+urxvt -e tmux attach &
 rm /home/toby/.obmxdg.xml &
 (sleep 15s && parcellite) &
 (sleep 20s && volumeicon) &
