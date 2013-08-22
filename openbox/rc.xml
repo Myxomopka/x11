@@ -215,12 +215,6 @@
         <command>oblogout</command>
       </action>
     </keybind>
-    <keybind key="W-m">
-      <action name="ToggleMaximize"/>
-    </keybind>
-    <keybind key="W-f">
-      <action name="ToggleFullscreen"/>
-    </keybind>
     <keybind key="A-Tab">
       <action name="NextWindow">
         <allDesktops>yes</allDesktops>
