@@ -192,7 +192,10 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="M-x">
+    <keybind key="W-x">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
@@ -200,10 +203,10 @@
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
-    <keybind key="A-q">
+    <keybind key="W-q">
       <action name="Restart"/>
     </keybind>
-    <keybind key="A-S-q">
+    <keybind key="W-S-q">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -212,10 +215,10 @@
         <command>oblogout</command>
       </action>
     </keybind>
-    <keybind key="A-m">
+    <keybind key="M-m">
       <action name="ToggleMaximize"/>
     </keybind>
-    <keybind key="F11">
+    <keybind key="M-f">
       <action name="ToggleFullscreen"/>
     </keybind>
     <keybind key="A-Tab">
@@ -244,33 +247,7 @@
         </finalactions>
       </action>
     </keybind>
-    <keybind key="A-k">
-      <action name="NextWindow">
-        <allDesktops>no</allDesktops>
-        <dialog>none</dialog>
-        <raise>yes</raise>
-        <bar>no</bar>
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <keybind key="A-j">
-      <action name="PreviousWindow">
-        <allDesktops>no</allDesktops>
-        <dialog>none</dialog>
-        <raise>yes</raise>
-        <bar>no</bar>
-        <finalactions>
-          <action name="Focus"/>
-          <action name="Raise"/>
-          <action name="Unshade"/>
-        </finalactions>
-      </action>
-    </keybind>
-    <keybind key="A-r">
+    <keybind key="W-r">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -303,12 +280,12 @@
         <command>amixer -q set Master toggle</command>
       </action>
     </keybind>
-    <keybind key="A-p">
+    <keybind key="W-p">
       <action name="Execute">
         <command>scrot '%H:%M-%d-%m-%y.png' -e 'mv $f ~/Dropbox/img/scrots/ &amp; sxiv ~/Dropbox/img/scrots/$f'</command>
       </action>
     </keybind>
-    <keybind key="W-p">
+    <keybind key="W-S-p">
       <action name="Execute">
         <command>scrot -s '%H:%M-%d-%m-%y.png' -e 'mv $f ~/Dropbox/img/scrots/ &amp; sxiv ~/Dropbox/img/scrots/$f'</command>
       </action>

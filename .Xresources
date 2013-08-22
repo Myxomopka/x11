@@ -1,7 +1,7 @@
-*scrollBar:false
-*saveLines:13337
-*cursorColor:#bbbbbb
+URxvt*scrollBar:false
+URxvt*saveLines:13337
+URxvt*cursorColor:#bbbbbb
 URxvt*background:#000000
 URxvt*foreground:#dedede
-*font:xft:Terminus:style=Regular:pixelsize=14:antialias=true
+URxvt*font:xft:Terminus:style=Regular:pixelsize=14:antialias=true
 !*font:-*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
