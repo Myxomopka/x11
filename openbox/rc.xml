@@ -215,10 +215,10 @@
         <command>oblogout</command>
       </action>
     </keybind>
-    <keybind key="M-m">
+    <keybind key="W-m">
       <action name="ToggleMaximize"/>
     </keybind>
-    <keybind key="M-f">
+    <keybind key="W-f">
       <action name="ToggleFullscreen"/>
     </keybind>
     <keybind key="A-Tab">
