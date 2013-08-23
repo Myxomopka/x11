@@ -1,7 +1,7 @@
 #!/bin/sh
 
 exec /usr/bin/openbox-session & wmpid=$!
-setxkbmap gb -option 'caps:swapescape,ctrl:menu_rctrl,lv3:ralt_alt,terminate:ctrl_alt_bksp'
+setxkbmap gb -option 'altwin:ctrl_win,caps:swapescape,ctrl:menu_rctrl,lv3:ralt_alt'
 
 if [ $(hostname) = "paddy" ]; then
         xmodmap ~/.Xmodmap

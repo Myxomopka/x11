@@ -61,12 +61,8 @@
     </font>
   </theme>
   <desktops>
-    <number>2</number>
+    <number>1</number>
     <firstdesk>1</firstdesk>
-    <names>
-      <name>1</name>
-      <name>2</name>
-    </names>
     <popupTime>0</popupTime>
   </desktops>
   <resize>
@@ -98,7 +94,7 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-    <keybind key="A-h">
+    <keybind key="A-S-h">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
@@ -106,7 +102,7 @@
       </action>
       <action name="MoveToEdgeWest"/>
     </keybind>
-    <keybind key="A-l">
+    <keybind key="A-S-l">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
       <action name="MoveResizeTo">
@@ -114,87 +110,7 @@
       </action>
       <action name="MoveToEdgeEast"/>
     </keybind>
-    <keybind key="W-j">
-      <action name="GoToDesktop">
-        <to>left</to>
-        <wrap>yes</wrap>
-      </action>
-    </keybind>
-    <keybind key="W-k">
-      <action name="GoToDesktop">
-        <to>right</to>
-        <wrap>yes</wrap>
-      </action>
-    </keybind>
-    <keybind key="W-h">
-      <action name="SendToDesktop">
-        <to>left</to>
-        <wrap>yes</wrap>
-        <follow>yes</follow>
-      </action>
-    </keybind>
-    <keybind key="W-l">
-      <action name="SendToDesktop">
-        <to>right</to>
-        <wrap>yes</wrap>
-        <follow>yes</follow>
-      </action>
-    </keybind>
-    <keybind key="A-S-h">
-      <action name="SendToDesktop">
-        <to>left</to>
-        <wrap>yes</wrap>
-        <follow>no</follow>
-      </action>
-    </keybind>
-    <keybind key="A-S-l">
-      <action name="SendToDesktop">
-        <to>right</to>
-        <wrap>yes</wrap>
-        <follow>no</follow>
-      </action>
-    </keybind>
-    <keybind key="A-1">
-      <action name="GoToDesktop">
-        <to>1</to>
-      </action>
-    </keybind>
-    <keybind key="A-2">
-      <action name="GoToDesktop">
-        <to>2</to>
-      </action>
-    </keybind>
-    <keybind key="W-1">
-      <action name="SendToDesktop">
-        <to>1</to>
-        <follow>yes</follow>
-      </action>
-    </keybind>
-    <keybind key="W-2">
-      <action name="SendToDesktop">
-        <to>2</to>
-        <follow>yes</follow>
-      </action>
-    </keybind>
-    <keybind key="A-S-1">
-      <action name="SendToDesktop">
-        <to>1</to>
-        <follow>no</follow>
-      </action>
-    </keybind>
-    <keybind key="A-S-2">
-      <action name="SendToDesktop">
-        <to>2</to>
-        <follow>no</follow>
-      </action>
-    </keybind>
-    <keybind key="W-d">
-      <action name="ToggleShowDesktop"/>
-    </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="W-x">
-      <action name="Close"/>
-    </keybind>
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
@@ -203,10 +119,10 @@
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
     </keybind>
-    <keybind key="W-q">
+    <keybind key="A-S-Backspace">
       <action name="Restart"/>
     </keybind>
-    <keybind key="W-S-q">
+    <keybind key="C-A-Backspace">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -241,7 +157,7 @@
         </finalactions>
       </action>
     </keybind>
-    <keybind key="W-r">
+    <keybind key="A-F2">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -274,12 +190,12 @@
         <command>amixer -q set Master toggle</command>
       </action>
     </keybind>
-    <keybind key="W-p">
+    <keybind key="A-Print">
       <action name="Execute">
         <command>scrot '%H:%M-%d-%m-%y.png' -e 'mv $f ~/Dropbox/img/scrots/ &amp; sxiv ~/Dropbox/img/scrots/$f'</command>
       </action>
     </keybind>
-    <keybind key="W-S-p">
+    <keybind key="C-Print">
       <action name="Execute">
         <command>scrot -s '%H:%M-%d-%m-%y.png' -e 'mv $f ~/Dropbox/img/scrots/ &amp; sxiv ~/Dropbox/img/scrots/$f'</command>
       </action>
@@ -324,12 +240,12 @@
           <to>next</to>
         </action>
       </mousebind>
-      <mousebind button="W-Up" action="Click">
+      <mousebind button="C-Up" action="Click">
         <action name="SendToDesktop">
           <to>previous</to>
         </action>
       </mousebind>
-      <mousebind button="W-Down" action="Click">
+      <mousebind button="C-Down" action="Click">
         <action name="SendToDesktop">
           <to>next</to>
         </action>
