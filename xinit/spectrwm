@@ -16,7 +16,7 @@ fi
 
 xset r rate 345 53 +fp '/usr/share/fonts/local' fp rehash
 xrdb ~/.Xresources
-urxvt -e tmux attach &
+#urxvt -e tmux attach &
 
 #feh --bg-fill /home/toby/img/wallpapers/galaxy.jpg
 #eval "$(gpg-agent --daemon)"
